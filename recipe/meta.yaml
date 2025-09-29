@@ -1,5 +1,5 @@
 {% set name = "pathfinder2e-stats" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pathfinder2e_stats-{{ version }}.tar.gz
-  sha256: 433ee7a971fd3ccba5f1425c85d69bdf503f714204d17b87d4f3f9ebc096b7bf
+  sha256: 9e9d7e27c4bdc8a9bceac80b68269fd261922c248f66959d53ab5424c21403d2
 
 build:
   noarch: python
