@@ -13,14 +13,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools >=66
-    - setuptools-scm
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - numpy >=1.24
@@ -41,7 +41,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'Statistical tools for Pathfinder 2nd edition'
+  summary: Statistical tools for Pathfinder 2nd edition
 
 extra:
   recipe-maintainers:
